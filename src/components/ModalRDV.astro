@@ -1,0 +1,108 @@
+---
+
+---
+
+<!-- You can open the modal using ID.showModal() method -->
+<button class="btn" onclick="my_modal_3.showModal()"> Prendre RDV </button>
+<dialog id="my_modal_3" class="modal">
+    <div class="modal-box">
+        <form method="dialog">
+            <button
+                class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
+            >
+                ✕
+            </button>
+        </form>
+
+        <div class="card h-fit max-w-6xl p-5 md:p-12" id="form">
+            <h2 class="mb-4 text-2xl font-bold">Pret a commencer?</h2>
+            <form
+                action="https://api.web3forms.com/submit"
+                method="POST"
+                id="contactForm"
+            >
+                <input
+                    type="hidden"
+                    name="access_key"
+                    value="4aa79248-d009-402a-aeef-9d7ff417a38f"
+                />
+                <input
+                    type="checkbox"
+                    name="botcheck"
+                    class="hidden"
+                    style="display: none"
+                />
+                <input
+                    type="hidden"
+                    name="subject"
+                    value="Un nouveau client potentiel vous a envoyer un mail!"
+                />
+                <div class="mb-6">
+                    <div class="mx-0 mb-1 sm:mb-4">
+                        <div class="mx-0 mb-1 sm:mb-4">
+                            <label
+                                for="name"
+                                class="pb-1 text-xs uppercase tracking-wider"
+                            ></label><input
+                                type="text"
+                                id="name"
+                                autocomplete="given-name"
+                                placeholder="Votre nom"
+                                class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md sm:mb-0"
+                                name="name"
+                            />
+                        </div>
+                        <div class="mx-0 mb-1 sm:mb-4">
+                            <label
+                                for="email"
+                                class="pb-1 text-xs uppercase tracking-wider"
+                            ></label><input
+                                type="email"
+                                id="email"
+                                autocomplete="email"
+                                placeholder="Votre adresse email"
+                                class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md sm:mb-0"
+                                name="email"
+                            />
+                        </div>
+                        <div class="mx-0 mb-1 sm:mb-4">
+                            <label
+                                for="tel"
+                                class="pb-1 text-xs uppercase tracking-wider"
+                            ></label><input
+                                type="tel"
+                                id="tel"
+                                autocomplete="tel"
+                                placeholder="Votre numero de telephone"
+                                class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md sm:mb-0"
+                                name="tel"
+                            />
+                        </div>
+                    </div>
+                    <div class="mx-0 mb-1 sm:mb-4">
+                        <label
+                            for="textarea"
+                            class="pb-1 text-xs uppercase tracking-wider"
+                        ></label><textarea
+                            type="text"
+                            id="textarea"
+                            name="textarea"
+                            cols="30"
+                            rows="5"
+                            placeholder="Ecriver un message pour plus de precision"
+                            class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md sm:mb-0"
+                        ></textarea>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button
+                        type="submit"
+                        class="w-full bg-base-200 px-6 py-3 font-xl rounded-md sm:mb-0"
+                    >
+                        Envoyer
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</dialog>

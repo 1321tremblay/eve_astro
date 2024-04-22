@@ -1,0 +1,143 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+import Navbar2 from "../components/Navbar.astro";
+import Card from "../components/Card.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<BaseLayout title="Accueil">
+    <Navbar2 />
+    <main>
+        <section class="prose-base lg:prose-lg">
+            <div
+                class="hero min-h-ch-50 lg:min-h-ch-75 bg-left"
+                style="background-image: url(/eve-bg01.jpg);"
+            >
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content">
+                    <div class="max-w-md pb-16">
+                        <h1 class="mb-5 text-3xl sm:text-5xl font-bold pt-16">
+                            L'accompagnement de <span class="text-accent"
+                                >votre</span
+                            >
+                            bien-etre
+                        </h1>
+                        <p class="mb-5 w-5/6 mx-auto font-bold">
+                            Découvrez comment mes méthodes douces et naturelles
+                            peuvent vous aider à retrouver l'équilibre et la
+                            sérénité dans votre vie quotidienne.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <section
+                class="flex flex-col items-center max-w-7xl mx-auto lg:pt-4"
+            >
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:mt-4">
+                    <Card
+                        title="Hypnotherapie"
+                        text="L'hypnothérapie offre des bienfaits tels que la réduction du stress et de l'anxiété, l'amélioration des habitudes et des comportements, ainsi que le traitement des troubles psychologiques tels que les phobies et les addictions."
+                    />
+
+                    <Card
+                        title="Auriculautherapie"
+                        text="L'auriculothérapie utilise la stimulation de points précis sur l'oreille pour soulager la douleur, réduire le stress et traiter diverses affections, en se basant sur la connexion entre ces points et les organes du corps."
+                    />
+
+                    <Card
+                        title="Reflexologie dorsale"
+                        text="La réflexologie dorsale est une technique de massage qui se concentre sur la stimulation des zones réflexes situées sur le dos, croyant qu'elles sont connectées à différents organes et parties du corps, pour favoriser la relaxation et le bien-être général."
+                    />
+
+                    <Card
+                        title="Les ventouses"
+                        text="Les ventouses en médecine chinoise traditionnelle sont des bols en verre ou en plastique chauffés pour créer un vide d'air, puis placés sur la peau pour stimuler la circulation sanguine, soulager la douleur et favoriser la guérison."
+                    />
+                </div>
+            </section>
+            <div class="divider max-w-7xl mx-auto px-8"></div>
+            <section class="flex justify-center mx-auto lg:pt-4 px-6">
+                <article class="prose lg:prose-xl md:max-w-7xl">
+                    <h2>Pourquoi faire une séance ?</h2>
+                    <p>
+                        Une séance peut être bénéfique dans de nombreuses
+                        situations et apporte un bien être physique et
+                        émotionnel. Un moment pour soi, dans une atmosphère
+                        paisible.
+                    </p>
+
+                    <p>
+                        Les soins peuvent être un très bon complément aux soins
+                        médicaux et aux séances de psychothérapie dont ils
+                        renforcent l’effet.
+                    </p>
+                    <p>
+                        Ils vont permettront de contribuer à soulager le stress,
+                        l’anxiété, les douleurs, les troubles digestifs, les
+                        troubles du sommeil, les migraines, les troubles
+                        dermatologiques, les dysménorrhées, les troubles de la
+                        fertilité, d’aider à mincir.
+                    </p>
+                    <p>
+                        Je vous propose un accompagnement lors des parcours
+                        médicalement assistés (PMA) et Fécondation in vitro
+                        (FIV, inséminations etc.), au cours de la grossesse, en
+                        préparation à l’accouchement…
+                    </p>
+                    <p>
+                        Ces séances sont très utile également dans
+                        l’accompagnement des maladies lourdes, et contribuent
+                        grandement au maintien du bien être de la personne.
+                        Elles favorisent un état de bien être et d’apaisement
+                        dans un monde moderne rapide et parfois épuisant
+                        moralement et physiquement.
+                    </p>
+                    <p>
+                        À noter que différents soins de bien être peuvent être
+                        réalisés, ils sont généralement choisis par le praticien
+                        et adapté à chaque personne. <br />
+                        Ils peuvent être dispensés dès le plus jeune âge.
+                    </p>
+                </article>
+            </section>
+            <div class="divider max-w-7xl mx-auto px-8"></div>
+
+            <section class="flex justify-center mx-auto lg:p-4 px-6">
+                <article class="prose lg:prose-xl md:max-w-7xl">
+                    <h2>Comment se déroule une séance ?</h2>
+                    <p>
+                        Une séance peut durer 45 minutes à 1H30 selon les soins
+                        réalisés.
+                    </p>
+                    <p>
+                        La séance commence toujours par un entretien qui est
+                        constitué d’un ensemble de questions précises permettant
+                        de recueillir des informations. Puis les soins sont
+                        réalisés.
+                        <br />Les outils peuvent varier, et sont choisis par le
+                        praticien et adaptés à chaque personne.
+                        <br />(ex : réchauffement de certaines zones du corps,
+                        travaille sur certaines zones du corps, ou points de
+                        réflexologie, etc)
+                    </p>
+                    <p>
+                        NB: Aucun diagnostique médical ne peut être fait au
+                        cabinet, il ne peut être posé que par le médecin
+                        traitant et ou les spécialistes médicaux concernés.
+                        <br />Aucun soins de bien être ne peut remplacer des
+                        soins médicaux s’il y a lieu.
+                    </p>
+                    <p>
+                        Le praticien peut être amené à refuser une consultation
+                        si il estime que la personne doit se diriger vers son
+                        médecin pour les troubles qu’elle rencontre.
+                    </p>
+                </article>
+            </section>
+        </section>
+
+        <Footer />
+    </main>
+</BaseLayout>

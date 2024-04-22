@@ -1,0 +1,5 @@
+User-agent: *
+Disallow:
+Allow: /
+
+Sitemap: https:///www.bienetrepsy.com/sitemap-index.xml
